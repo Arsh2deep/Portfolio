@@ -1,0 +1,126 @@
+:root {
+    --primary: #0056b3;
+    --text-main: #333333;
+    --heading-text: #2c3e50;
+    --border-color: #dddddd;
+    --bg-main: #f9f9f9;
+  }
+body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: var(--text-main);
+      background-color: var(--bg-main);
+    }
+.resume-container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+    }
+    h1 {
+      margin: 0 0 5px 0;
+      font-size: 28px;
+      color: var(--primary);
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--heading-text);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 5px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    h3{
+        margin: 0 0 5px 0;
+        font-size: 16px;
+        color:var(--heading-text);
+    }
+
+    p{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    section{
+        margin-bottom: 20px;
+    }
+
+    /*using :Hover and :Focus*/
+    a{
+        color:var(--primary);
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    a:focus{
+        text-decoration: underline;
+        outline: 2px solid var(--primary);
+    }
+
+    /*Education and Projects */
+    .entry{
+        margin-bottom: 15px;
+    }
+
+    .entry-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .date{
+        color: #666;
+        font-size: 14px;
+    }
+
+    /*Bullet List*/
+    ul {
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .skills-list {
+        list-style-type: square;
+      }
+      
+      /* Mobile Responsiveness */
+      @media (max-width: 650px) {
+        body {
+          padding: 10px;
+        }
+      
+        .resume-container {
+          padding: 15px;
+        }
+      
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        .entry-header {
+          flex-direction: column;
+        }
+      }
